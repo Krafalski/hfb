@@ -4,7 +4,7 @@
 body {
   margin-top:20px;
   font-family: Osaka;
-  background-color: #FBFCFA;
+  background-color: ghostwhite;
   color: inherit;
 }
 
@@ -13,7 +13,7 @@ h2, h3, h5 {
 }
 
 h4 {
-text-align:justify;
+  text-align:justify;
 }
 
 button {
@@ -22,6 +22,12 @@ button {
 
 li {
   text-align: left;
+}
+
+a {
+  text-align: center;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 #container {
@@ -40,8 +46,21 @@ li {
   text-align: left;
   background-image: radial-gradient(circle, #ffcd8d, orange);
   box-shadow: 4px 4px 8px orange, -4px -4px 8px orange, 4px -4px 8px orange, -4px 4px 8px orange;
+  text-align: center;
+  vertical-align: middle;
+}
+#happy-fun-ball p{
+  line-height: 20vmax;
+  color: rgba(255, 255, 255, 0.1);
+}
+#happy-fun-ball:hover{
+    background-image: radial-gradient(circle, orange, #ffcd8d);
+      box-shadow: 4px 4px 8px white, -4px -4px 8px white, 4px -4px 8px white, -4px 4px 8px white;
 }
 
+#happy-fun-ball:hover p {
+  color: rgba( 0, 0, 0, 0);
+}
 #special-container {
   display:inline-block;
 }
@@ -49,10 +68,11 @@ li {
 h1 {
   display: inline-block;
   vertical-align: center;
-  font-family: 'Zapfino';
-  position:absolute;
+  font-family: 'Marker Felt';
+  position: absolute;
   left: 35vmax;
-  font-size: 5vmax;
+  top: 25px;
+  font-size: 8vmax;
   text-align: left;
 }
 
