@@ -16,11 +16,11 @@ Browser - github:
 - Navigate to YOUR version on your repo
 - Click the 'clone or download' button (on the right, below fork). ![Copy or Clone button](https://i.imgur.com/hsHdQTA.png)
 
-This will copy the link to your clipboard and make it ready to paste in the command line. REMEMBER: This should be from YOUR repo (the link to be copied should be `git@github.com:your-github-handle/hfb.git`)
+This will give you the option to copy the link to your clipboard and make it ready to paste in the command line. REMEMBER: This should be from YOUR repo (the link to be copied should be `git@github.com:your-github-handle/hfb.git`)
 
 Command line:
 - Navigate to a directory OUTSIDE of wdi-remote-matrix
-mkdir (if you need to)
+`mkdir` (if you need to)
 - ```$git clone `git@github.com:your-github-handle/hfb.git` ``` (use `command v` to paste the url from github)
 - The above command should create a copy of Happy Fun Ball locally (on your computer) and initialize git. Let's check:
   - `cd` into the directory and then `ls` and check that `index.html` and `main.css` are in your folder
@@ -28,7 +28,7 @@ mkdir (if you need to)
 => ![on branch master
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean](https://i.imgur.com/SMyXeGV.png)
-- `git remove -v` (should be YOUR github url) => ![this should show you the url where you are fetching and pushing from (with an alias of origin). It should be your github.](https://i.imgur.com/QVG9UPS.png)
+- `git remote -v` (should be YOUR github url) => ![this should show you the url where you are fetching and pushing from (with an alias of origin). It should be your github.](https://i.imgur.com/QVG9UPS.png)
 
 #### Part 2 - Make a Dev Branch
 Command line:
@@ -48,8 +48,15 @@ Command line:
 - open index.html in the broswer `open index.html`
 
 Final Steps:
-Organize your browser, command line and Atom so that you can easily switch between them (don't forget to use spectacle).
+Organize your browser, command line and Atom so that you can easily switch between them (don't forget to use spectacle). Here is how I worked on this project:
+![window organization](https://i.imgur.com/gmXjBhh.png)
+
 Take a couple minutes to get familiar with the code you'll be working on.
+
+### New Feature - Link the HTML and CSS
+
+
+
 
 ### New Feature - Update the colors
 - Work on a new feature - working in the main.css file, you will update the colors of the Happy Fun Ball web page
