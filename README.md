@@ -61,7 +61,7 @@ Command line:
 - Let's go ahead and `git add index.html` and `git commit -m 'fixed typo in index.html'`, there! We added our changes and put in a descriptive commit message.
 
 Atom - main.css:
-- Now let's update the colors in the `body`, let's change `color` (font color), and `background-color` to whatever our heart desires. Go ahead and use hexadecimal colors, rgb, hsl or some of the standard web colors. http://htmlcolorcodes.com/color-names/
+- Now let's update the colors in the `body`, let's change `color` (font color), and `background-color` to whatever our heart desires. [Go ahead and use hexadecimal colors, rgb, hsl or some of the standard web colors.]( http://htmlcolorcodes.com/color-names/)
 - When we've found the colors we like, we can go ahead and `git add main.css` and `git commit -m 'updated colors'`
 
 ### See Branching in Action
