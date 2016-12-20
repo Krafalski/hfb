@@ -1,7 +1,7 @@
 # Happy Fun Ball
 
 ## Scenario
-You have been hired by Wacky Products Incorporated. They are just weeks away from starting a global marketing campaign for their new hot product Happy Fun Ball and they want a top notch web page to be ready to launched as soon as possible.
+You have been hired by Wacky Products Incorporated. They are just weeks away from starting a global marketing campaign for their new hot product Happy Fun Ball and they want a top-notch web page to be launched as soon as possible.
 
 Mysteriously, the entire dev team has lapsed into comas and it is up to you to save the project.
 
@@ -11,32 +11,34 @@ As a professional developer, you will do whatever it takes to finish this projec
 ### Setup
 #### Part 1 - Get the files
 Browser - github:
-- Fork Happy-Fun-Ball (make a copy of this remote repository to your github account)
-- Navigate to your version
-- Click the 'clone or download' button (on the right)
+- Fork Happy-Fun-Ball (make a copy of this remote repository to your github account):
+  - [Go here]( https://github.com/Krafalski/hfb) and click form and fork it to your personal repo (Don't worry! You can totally delete it after the lesson!)
+- Navigate to your version on your repo
+- Click the 'clone or download' button (on the right). This will copu the link to your clipboard and make it ready to paste in the command line.
 
 Command line:
 - Navigate to a directory OUTSIDE of wdi-remote-matrix
-mkdir, if you need to
+mkdir (if you need to)
 - ```$git clone `command v` ```
-- The above command should have a copy of Happy Fun Ball locally (on your computer)
-- `cd` into the directory and then `ls` and check that `index.html` and `main.css` are in your folder
-- `git status`
-=> on branch master
+- The above command should create a copy of Happy Fun Ball locally (on your computer) and initialize git. Let's check:
+  - `cd` into the directory and then `ls` and check that `index.html` and `main.css` are in your folder
+  - `git status`
+=> ![on branch master
 Your branch is up-to-date with 'origin/master'.
-nothing to commit, working tree clean
-- `git remove -v` this should show you the url where you are fetching and pushing from (with an alias of origin). It should be your github.
+nothing to commit, working tree clean](https://i.imgur.com/SMyXeGV.png)
+- `git remove -v` (should be YOUR github) => ![this should show you the url where you are fetching and pushing from (with an alias of origin). It should be your github.](https://i.imgur.com/QVG9UPS.png)
 
 #### Part 2 - Make a Dev Branch
 Command line:
-- To make a new branch AND checkout the new branch(we will call our new branch 'dev'): `git checkout -b dev`
+- To make a new branch AND checkout the new branch(we will call our new branch 'dev'): `git checkout -b dev` => ![new branch](https://i.imgur.com/AnAkrWr.png)
 - Do `ls` and `git status` to confirm everything looks like it should
-=> on branch dev
-nothing to commit working tree clean
+=> ![on branch dev
+nothing to commit working tree clean](https://i.imgur.com/ulpNaf2.png)
 - Get this branch on your github repo!: `git push origin dev`
 
 Browser - github:
 - See your new branch on github (it should be there, refresh if you don't see it. If you still don't see it, let me know and we'll trouble shoot)
+=> new message along the top of github OR from clicking the Branch: master button ![pull-down menu](https://i.imgur.com/Q6N93aM.png)
 
 Command line:
 - open the files in atom `atom .`
@@ -53,7 +55,7 @@ Command line:
 - Before we begin, let's make a new branch specifically for our new feature `git checkout -b color-updates`
 
 Atom - index.html :
-- You probably noticed that index.html had a typo! On line 19 `class="pr"` should actually be `class="price"`. Now, it's not really our task, or our file to work on, but we're just being proactive and  helpful! What could possibly be wrong with that?
+- You probably noticed that index.html had a typo! On line 19 `class="pr"` should actually be `class="price"`. Let's update that! Now, it's not really our task, or our file to work on, but we're just being proactive and  helpful! What could possibly be wrong with that?
 
 Command line:
 - Let's go ahead and `git add index.html` and `git commit -m 'fixed typo in index.html'`, there! We added our changes and put in a descriptive commit message.
