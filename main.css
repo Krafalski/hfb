@@ -1,0 +1,61 @@
+/*****************************************
+*   General
+*****************************************/
+body {
+  margin-top:20px;
+  font-family: Osaka;
+  background-color: #FBFCFA;
+  color: inherit;
+}
+
+h2, h3, h5 {
+  text-align: center;
+}
+
+h4 {
+text-align:justify;
+}
+
+button {
+  padding:10px;
+}
+
+li {
+  text-align: left;
+}
+
+#container {
+  max-width:80%;
+  margin: auto;
+}
+
+/*****************************************
+*   Happy Fun Ball
+*****************************************/
+#happy-fun-ball {
+  min-width: 20vmax;
+  height: 20vmax;
+  border-radius:100%;
+  background-color: #FF8E00;
+  text-align: left;
+  background-image: radial-gradient(circle, #ffcd8d, orange);
+  box-shadow: 4px 4px 8px orange, -4px -4px 8px orange, 4px -4px 8px orange, -4px 4px 8px orange;
+}
+
+#special-container {
+  display:inline-block;
+}
+
+h1 {
+  display: inline-block;
+  vertical-align: center;
+  font-family: 'Zapfino';
+  position:absolute;
+  left: 35vmax;
+  font-size: 5vmax;
+  text-align: left;
+}
+
+.price {
+  color: orange;
+}
