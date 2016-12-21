@@ -81,7 +81,7 @@ To be able to use branches, we will have to learn some new git commands
 
 Even though these are just four new commands, it is going to take some practice to master them. Let's get started!
 
-Note: You may have noticed that `git merge` is missing - we will be merging our branches via github, so we will not use this command. 
+Note: You may have noticed that `git merge` is missing - we will be merging our branches via github, so we will not use this command.
 
 ## Scenario
 You have been hired by Wacky Products Incorporated. They are just weeks away from starting a global marketing campaign for their new hot product Happy Fun Ball and they want a top-notch web page to be launched as soon as possible.
@@ -144,7 +144,7 @@ Let's test:
 
 </details>
 
-We can configure git to have autocorrect, if it is not already set as a default. We are going to install it locally (just to this repository). If you end up liking the configuration, you can always install it globally later.
+We can configure git to have autocorrect, if it is not already set as a default. We are going to install it locally (just to this repository). If you end up liking the configuration, you can always install it globally, later.
 
 ###### Command line:
 - `git config --local help.autocorrect` -if the setting has updated, there will be no message
@@ -179,7 +179,7 @@ We can configure git to have autocorrect, if it is not already set as a default.
 
 ###### Browser - github:
 - See your new branch on github (it should be there, refresh if you don't see it. If you still don't see it, let me know and we'll trouble shoot)
-It will be a new message along the top of github OR from clicking the Branch: master button <details><summary> Screeshot </summary> ![pull-down menu](https://i.imgur.com/oIptMUM.png)
+It will be a new message along the top of github OR from clicking the `Branch: master` button <details><summary> Screeshot </summary> ![pull-down menu](https://i.imgur.com/oIptMUM.png)
 </details>
 
 ###### Command line:
@@ -378,7 +378,7 @@ Go through atom and the browser to see that your changes have come back
 - Can't find `.price`?
 - `⌘F` will open a find/replace tab at the bottom of Atom and let you look for `.price`
 - `esc` to close the find/replace tab
-- make your changes (we are changing the color of )
+- make your changes (we are changing the color of elements with the class of `price`)
 - `⌘S` -Don't forget to save your file
 - Refresh your browser to see your changes
 
@@ -452,7 +452,7 @@ ERROR! Merge conflict!
 
 **Uh-oh...**
 
-### Merge Conflict (and resolution)!
+### Merge Conflict (and Resolution)!
 
 ###### Atom - index.html :
 
@@ -468,6 +468,7 @@ Which is the line:
 
 - Now that we've removed the conflict let's finish cleaning up the conflict and remove the line
 `>>>>>>> 3b73c340f2c158a80ce20828fd94ad83ea60b444`
+- Let's also clean up any extra white space
 
 - `git add index.html`
 - `git commit -m 'fixed merge conflict'`
@@ -528,8 +529,8 @@ Which is the line:
 - Make a new branch, continue to update the Happy Fun Ball web page, and merge back your changes (New Feature Ideas: change color of Happy Fun Ball. Add a google font. Add some js/jQuery to show/hide Happy Fun Ball's Warnings.)
 - Research and try `git stash`
 - Delete a branch locally and remotely :
-- `git push origin --delete branch_name`
-- `git branch -d branch_name`
+  - `git push origin --delete branch_name`
+  - `git branch -d branch_name`
 
 
 ### Sudden and Permanent Shut Down of Wacky Products Incorporated
