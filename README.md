@@ -1,5 +1,13 @@
 # Happy Fun Ball
 
+## A Lesson on Git Branches and Merging
+
+### Lesson Objectives
+
+### Background Info
+
+### Resources
+
 ## Scenario
 You have been hired by Wacky Products Incorporated. They are just weeks away from starting a global marketing campaign for their new hot product Happy Fun Ball and they want a top-notch web page to be launched as soon as possible.
 
@@ -57,16 +65,76 @@ Command line:
 - open the files in atom `atom .`
 - open index.html in the broswer `open index.html`
 
-Final Steps:
-Organize your browser, command line and Atom so that you can easily switch between them (don't forget to use spectacle). Here is how I worked on this project:
+#### Part 3 - Organize yourself
+Organize your browser, command line and Atom so that you can easily switch between them (don't forget to use spectacle). Close extra tabs and browser windows. Here is how I worked on this project:
+
 ![window organization](https://i.imgur.com/gmXjBhh.png)
 
 Take a couple minutes to get familiar with the code you'll be working on.
 
 ### New Feature - Link the HTML and CSS
+- Work on a new feature - working in index.html, you will add a link to main.css, then you will merge it into the dev branch, and then into master
+
+#### Part 1 - Make a New Branch
+Command line:
+- Let's make a new branch specifically for our new feature
+- `git branch` - to check that you are on the `dev` branch. This command will show all the branches and highlight the one you are on.
+
+ ![example output of `git branch`](https://i.imgur.com/2bKy3zL.png)
 
 
+- `git checkout -b link-files` - this will create a new branch (a copy of the branch we are switching from, in this case: `dev`) called `link-files` and check it out
 
+#### Part 2 - Work on New Feature
+Atom - index.html :
+- In the index.html - between the` <title>` and `</head>` tags, let's insert a link to our css `<link rel="stylesheet" href="main.css">`
+- Save our changes in atom
+- Reload our browser view of the index.html
+- The css should now be loaded into our index.html
+
+#### Part 3 - Feature Completed! Use Git to Track/Add it
+
+Command line:
+- `git add index.html`
+- `git commit -m 'index.html and main.css linked'`
+- `git push origin link-files`
+
+#### Part 4 - Merge New Feature into Dev Branch
+Browser - github :
+- See new branch (either a message will pop up or use the left side pull down to see) ![image from below of github]
+- Select pull request tab ![image from below of github]
+- Select `base:dev` and `compare: link-files`
+- Wait a moment to let github tell you if there are any merge conlicts ![image from below of github]
+- All clear! Go ahead and press the merge button, and then press it again to confirm the merge! (Note: when you work on a team it is unlikely that you would merge your own pull requests)
+
+#### Part 5 - Get the Latest Remote Version of Dev, Locally
+Command line:
+- `git checkout dev`
+- `git pull origin dev`
+
+- Check that Atom and your browser view are up to date with the new features
+
+- If everything looks good, let's merge these changes into the master branch
+
+#### Part 6 - Merge Dev Branch into Master
+Command line:
+
+- `git pull origin master` (this should come back as clean but it is a good habit to pull before you push)
+- `git push origin dev` (this should also come back as clean - since we have changed nothing in our code)
+
+Browser - github :
+- Pull Request
+- Compare `base: master` to `compare: dev`
+- Wait to be sure there are no conflicts
+- Merge Pull Request
+- Confirm Pull Request
+
+Command line:
+- `git checkout master`
+- `git pull origin master`
+
+Atom/Browser
+- Check to make sure everything has updated as expected
 
 ### New Feature - Update the colors
 - Work on a new feature - working in the main.css file, you will update the colors of the Happy Fun Ball web page
@@ -139,15 +207,13 @@ Browser - github:
 - Wait a moment to let github tell you if there are any merge conflicts ![github all clear](https://i.imgur.com/L72S16y.png)
 - All clear! Go ahead and press the merge button, go ahead and confirm the merge! (Note: when you work on a team, it is unlikely that you would merge your own pull requests) ![Merge Pull Request message and button](https://i.imgur.com/2yUuGmq.png)
 
-Command line:
-- `git checkout dev`
-- `git pull origin dev` - to pull down your changes from the remote to your local copy
 
 ### Going Back to Our Updated Colors Feature
 - Whew! That was exciting! It's nice to be back to working on this feature. We know there were changes to dev, so let's get them
 
 Command line:
-- `git pull origin dev`
+- `git checkout dev`
+- `git pull origin dev` - to pull down your changes from the remote to your local copy
 
 ...
 
@@ -169,7 +235,7 @@ Atom - index.html :
 Which is the line:
 
  `<h3 class="price>Only $14.95</h3>`
-  - this conflict is our doing, let's get rid of our mistake from working in index.html when we were only supposed to be working in main.css and keep the change made from the price-fix branch
+  - This conflict is our doing, let's get rid of our mistake from working in index.html when we were only supposed to be working in main.css and keep the change made from the price-fix branch
 
 - Now that we've removed the conflict let's finish cleaning up the conflict and remove the line
 `>>>>>>> 3b73c340f2c158a80ce20828fd94ad83ea60b444`
@@ -222,13 +288,14 @@ Command line:
 Browser - github:
 - Pull request
 - Compare `base: master` to `compare: dev`
-- Wait to be sure tehrea re no conflicts
+- Wait to be sure there are no conflicts
 - Merge Pull Request
 - Confirm Pull Request
 - Check to see that your changes have been successfully made to the master branch
 
 ### Hungry for More?
-- Make a new branch, continue to update the Happy Fun Ball web page, and merge back your changes (New Feature Ideas: change color of Happy Fun Ball. Add a google font. Add some js/jQuery to show/hide Happy Fun Ball's Warning.)
+- Make a new branch, continue to update the Happy Fun Ball web page, and merge back your changes (New Feature Ideas: change color of Happy Fun Ball. Add a google font. Add some js/jQuery to show/hide Happy Fun Ball's Warnings.)
+- Research and try `git stash`
 
 ### Sudden and Permanent Shut Down of Wacky Products Incorporated
 - Well, it was fun while it lasted?
