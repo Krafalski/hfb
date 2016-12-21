@@ -164,7 +164,7 @@ Your first new feature!  Working in `index.html`, you will add a link to `main.c
 - `git status`
 - `git add index.html`
 - `git commit -m 'index.html and main.css linked'`
-- `git push origin link-files` <details><summary>Example output:</summary>
+- `git push origin link-files`  (Remember: `origin`and `link-files` can be autocompeletd by using `tab`) <details><summary>Example output:</summary>
 `Counting objects: 3, done.`<br>
 `Delta compression using up to 4 threads.`<br>
 `Compressing objects: 100% (3/3), done.` <br>
