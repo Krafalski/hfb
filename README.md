@@ -280,7 +280,7 @@ Make changes here in main.css ![main.css](https://i.imgur.com/1WY4xj8.png)
 - `git diff` - see what we have changed
 - `git add main.css` and
 - `git commit -m 'updated colors'`
-- `git log --oneline` -see our commits so far
+- `git log --oneline` -see our commits so far (`q` to exit)
 
 ### See Branching in Action
 ###### Command line:
@@ -289,7 +289,7 @@ Make changes here in main.css ![main.css](https://i.imgur.com/1WY4xj8.png)
 ###### Atom - main.css:
 - See that our changes are gone
 
-###### Broswer - index.html:
+###### Browser - index.html:
 - Refresh the page and see that the page has reverted to the original version
 
 Let's get back to our changes!
@@ -335,7 +335,7 @@ Let's make a new branch off of the dev branch to hotfix this major problem! **
 
 ###### Command line:
 - `git add index.html`
-- `git commit -m 'fixed price of Happy Fun Ball on index.html'`
+- `git commit -m 'fixed price of Happy Fun Ball in index.html'`
 - `git pull origin dev` (this should come back clean, but it is good practice to pull before pushing)
 - `git push origin price-fix` to create a new branch on github
 
@@ -359,7 +359,7 @@ Let's make a new branch off of the dev branch to hotfix this major problem! **
 - Whew! That was exciting! It's nice to be back to working on this feature. We know there were changes to the `dev` branch, so let's get them
 
 ###### Command line:
-- `git checkout dev`
+- `git checkout color-updates`
 - `git pull origin dev` - to pull down your changes from the remote to your local copy
 
 ...
