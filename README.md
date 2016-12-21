@@ -33,17 +33,20 @@ This will give you the option to copy the link to your clipboard and make it rea
 ###### Command line:
 - Navigate to a directory **OUTSIDE** of wdi-remote-matrix
 `mkdir` (if you need to)
-- ```$git clone `git@github.com:your-github-handle/hfb.git` ``` (use `command v` to paste the url from github)
+- ```$git clone `git@github.com:your-github-handle/hfb.git` ``` (use `⌘V` to paste the url from github)
 - The above command should create a copy of Happy Fun Ball locally (on your computer) and initialize git.
  Let's check:
-  - `cd` into the directory and then `ls` and check that `index.html` and `main.css` are in your folder
+  - `cd` into the directory and then
+  - `ls` and check that
+    - `index.html` and
+    - `main.css` are in your folder
   - `git status`
 <details><summary>Example output</summary>  ![on branch master
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean](https://i.imgur.com/SMyXeGV.png)
 </details>
 
-  - `git remote -v` <details><summary>Example Output</summary> (should be YOUR github url) => ![this should show you the url where you are fetching and pushing from (with an alias of origin). It should be your github.](https://i.imgur.com/QVG9UPS.png)
+  - `git remote -v` - to check your remote set up <details><summary>Example Output</summary> (should be YOUR github url) => ![this should show you the url where you are fetching and pushing from (with an alias of origin). It should be your github.](https://i.imgur.com/QVG9UPS.png)
 </details>
 
 #### Part 2 - Configure Git to Have Autocorrect
@@ -58,15 +61,18 @@ To help with today's lesson we can configure git to have autocorrect. We are goi
 
 #### Part 3 - Make a Dev Branch
 ###### Command line:
-- To make a new branch AND checkout the new branch(we will call our new branch 'dev'): `git checkout -b dev`
+- To make a new branch AND checkout the new branch(we will call our new branch 'dev'):
+- `git checkout -b dev`
 <details><summary>Example output</summary>
  ![branch](https://i.imgur.com/AnAkrWr.png)
  </details>
-- Do `ls` and `git status` to confirm everything looks like it should <details><summary>Example output</summary> ![on branch dev
+- `ls` - `index.html` & `main.css` - should still be there
+- `git status` to confirm everything looks like it should <details><summary>Example output</summary> ![on branch dev
 nothing to commit working tree clean](https://i.imgur.com/ulpNaf2.png)
 </details>
 
-- Get this branch on your github repo!: `git push origin dev`
+- Get this branch on your github repo:
+- `git push origin dev`
 
 ###### Browser - github:
 - See your new branch on github (it should be there, refresh if you don't see it. If you still don't see it, let me know and we'll trouble shoot)
@@ -85,7 +91,7 @@ We are going to be going between the browser, the command line and Atom frequent
 Take a couple minutes to get familiar with the code you'll be working on.
 
 ### New Feature - Link the HTML and CSS
-Your first new feature!  Working in index.html, you will add a link to main.css, then you will merge it into the dev branch, and then into master
+Your first new feature!  Working in `index.html`, you will add a link to `main.css`, then you will merge it into the dev branch, and then into master
 
 #### Part 1 - Make a New Branch
 ###### Command line:
@@ -98,10 +104,11 @@ Your first new feature!  Working in index.html, you will add a link to main.css,
 
 #### Part 2 - Work on New Feature
 ###### Atom - index.html :
-- In the index.html - between the` </title>` and `</head>` tags, let's insert a link to our css `<link rel="stylesheet" href="main.css">`
-- Save our changes in atom
-- Reload our browser view of the index.html
-- The css should now be loaded into our index.html
+- In the index.html - between the` </title>` and `</head>` tags, let's insert a link to our css :
+- `<link rel="stylesheet" href="main.css">`
+- `⌘S` - Save our changes in atom
+- `⌘R` - Reload our browser view of the `index.html`
+- The CSS should now be loaded into our `index.html`
 
 #### Part 3 - Feature Completed! Use Git to Track/Add it
 
@@ -148,24 +155,30 @@ Your first new feature!  Working in index.html, you will add a link to main.css,
 - Check to make sure everything has updated as expected
 
 ### New Feature - Update the colors
-- Work on a new feature - working in the main.css file, you will update the colors of the Happy Fun Ball web page
+ Work on a new feature: Working in the `main.css` file, you will update the colors of the Happy Fun Ball web page
 
 ###### Command line:
 - Before we begin, let's make a new branch specifically for our new feature:
-  - Check that you are on the dev branch `git branch` will list all your branches and have a `*` next to the branch you are on. Then:
+  - Check that you are on the dev branch
+  - `git branch` will list all your branches and have a `*` next to the branch you are on. Then:
   -  `git checkout -b color-updates`
 
-###### Atom - index.html :
-- You probably noticed that index.html had a typo! On line 19 `class="pr"` should actually be `class="price"`. Let's update that! Now, it's not really our task, or our file to work on, but we're just being proactive and  helpful! What could possibly be wrong with that?
+###### Atom - index.html:
+- You probably noticed that index.html had a typo! On line 19 `class="pr"` should actually be `class="price"`.
+- Let's update that! Now, it's not really our task, or our file to work on, but we're just being proactive and  helpful! What could possibly be wrong with that?
 
 ###### Command line:
-- Let's go ahead and `git add index.html` and `git commit -m 'fixed typo in index.html'`, there! We added our changes and put in a descriptive commit message. We are undoubtebly awesome.
+- Let's go ahead and
+- `git add index.html` and
+- `git commit -m 'fixed typo in index.html'`, there! We added our changes and put in a descriptive commit message. We are undoubtebly awesome.
 
 ###### Atom - main.css:
 - Now let's update the colors in the `body`, let's change `color` (font color), and `background-color` to whatever our heart desires. [Go ahead and use hexadecimal colors, rgb, hsl or some of the standard web colors.]( http://htmlcolorcodes.com/color-names/)
 
 Make changes here in main.css ![main.css](https://i.imgur.com/1WY4xj8.png)
-- When we've found the colors we like, we can go ahead and `git add main.css` and `git commit -m 'updated colors'`
+- When we've found the colors we like, we can go ahead and
+- `git add main.css` and
+- `git commit -m 'updated colors'`
 
 ### See Branching in Action
 ###### Command line:
@@ -178,17 +191,20 @@ Make changes here in main.css ![main.css](https://i.imgur.com/1WY4xj8.png)
 - Refresh the page and see that the page has reverted to the original version
 
 Let's get back to our changes!
+###### Command line:
 - `git checkout color-updates`
 
 Go through atom and the browser to see that your changes have come back
 
 ###### Atom - main.css:
 - Let's make one more color change, now that we are on our color-updates branch. `.price` change the color from orange, to whatever color you want
-- Don't forget to save your file
+- `⌘S` -Don't forget to save your file
 
 ### Starting on a New Feature When We Haven't Finished Our Previous One
-- There was an error! The price of Happy Fun Ball is supposed to be $24.95, not $14.95!
-- Let's make a new branch off of the dev branch to hotfix this major problem! **
+There was an error! The price of Happy Fun Ball is supposed to be $24.95, not $14.95!
+<br>
+
+Let's make a new branch off of the dev branch to hotfix this major problem! **
 
 ###### Command line:
 - `git checkout dev`
@@ -196,12 +212,13 @@ Go through atom and the browser to see that your changes have come back
 
 - We will commit our changes (we will not cover `stash` today):
 
- `git add .` then `git commit -m 'changed price color'`
-- Now `git checkout dev`
+- `git add .`
+- `git commit -m 'changed price color'`
+-  `git checkout dev`
 - `git checkout -b 'price-fix` to make a new branch off of dev (and automatically be switched to the new branch) **
 
 ###### Atom - index.hmtl:
-- update the price of happy fun ball from `$14.95` to `$24.95` (~ line 19 of index.html)
+- Update the price of happy fun ball from `$14.95` to `$24.95` (~ line 19 of `index.html`)
 
 ###### Command line:
 - `git add index.html`
@@ -235,6 +252,8 @@ Go through atom and the browser to see that your changes have come back
 
 ERROR! Merge conflict! ![error message](https://i.imgur.com/KtbGDup.png)
 
+- Uh-oh...
+
 ### Merge Conflict (and resolution)!
 
 ###### Atom - index.html :
@@ -258,8 +277,8 @@ Which is the line:
 - `git push origin dev`
 
 ###### Browser- github:
-- Since we were on dev and fixed dev, the changes should have automatically been sent to github
-- Check the index.html file on github to see that our fix went through
+- Since we were on the branch `dev` and fixed `dev`, the changes should have automatically been sent to github
+- Check the `index.html` file on github to see that our fix went through
 
 
 ### Finishing and Merging Your Color Updates
@@ -277,7 +296,7 @@ Which is the line:
 
 ###### Browser - github :
 - Pull Request
-- compare `base: dev` to `compare: color-updates`
+- Compare `base: dev` to `compare: color-updates`
 - Wait to be sure there are no conflicts
 - Merge Pull Request
 - Confirm Pull Request
@@ -291,7 +310,9 @@ Which is the line:
 - **Only working code should ever be pushed to master!**
 
 - If everything is ok, go ahead and push the changes to master
-- If you made changes, don't forget to `git add` and `git commit -m ''`
+- If you made changes, don't forget to
+- `git add` and
+-  `git commit -m ''`
 
 ###### Command line:
 - `git pull orgin dev` (yes, we _just_ did this, but it is a good habit to do a pull before doing a push )
