@@ -28,7 +28,8 @@ As a professional developer, you will do whatever it takes to finish this projec
   <details><summary>Show Screenshot</summary>
   ![Copy or Clone button](https://i.imgur.com/hsHdQTA.png)
 </details>
-This will give you the option to copy the link to your clipboard and make it ready to paste in the command line. REMEMBER: This should be from YOUR repo (the link to be copied should be `git@github.com:your-github-handle/hfb.git`)
+This will give you the option to copy the link to your clipboard and make it ready to paste in the command line.
+- REMEMBER: This should be from YOUR repo (the link to be copied should be `git@github.com:your-github-handle/hfb.git`)
 
 ###### Command line:
 - Navigate to a directory **OUTSIDE** of wdi-remote-matrix
@@ -36,7 +37,7 @@ This will give you the option to copy the link to your clipboard and make it rea
 - ```$git clone `git@github.com:your-github-handle/hfb.git` ``` (use `⌘V` to paste the url from github)
 - The above command should create a copy of Happy Fun Ball locally (on your computer) and initialize git.
  Let's check:
-  - `cd` into the directory and then
+  - `cd` into the cloned directory and then
   - `ls` and check that
     - `index.html` and
     - `main.css` are in your folder
@@ -53,7 +54,7 @@ nothing to commit, working tree clean](https://i.imgur.com/SMyXeGV.png)
 To help with today's lesson we can configure git to have autocorrect. We are going to install it locally (just to this repository). If you end up liking the configuration, you can always install it globally later
 
 ###### Command line:
-- `git config --local help.autocorrect`
+- `git config --local help.autocorrect` -if the setting has updated, there will be no message
 <details><summary>Example output:</summary>
 
    ![an autocorrect message](https://i.imgur.com/Jsi5Jwx.png)
@@ -84,7 +85,7 @@ It will be a new message along the top of github OR from clicking the Branch: ma
 - `open index.html`open index.html in the browser
 
 #### Part 3 - Organize yourself
-We are going to be going between the browser, the command line and Atom frequently. Be sure you can work efficiently and effectively by setting up a good workflow! Start by organizing your browser, command line and Atom so that you can easily switch between them (don't forget to use spectacle). Close extra tabs and browser windows. <details><summary> Here is how I worked on this project: </summary>
+We are going to be going between the browser, the command line and Atom frequently. Be sure you can work efficiently and effectively by setting up a good workflow! Start by organizing your browser, command line and Atom so that you can easily switch between them (don't forget to use Spectacle). Close extra tabs and browser windows. <details><summary> Here is how I worked on this project: </summary>
 ![window organization](https://i.imgur.com/gmXjBhh.png)
 </details>
 
@@ -198,6 +199,8 @@ Go through atom and the browser to see that your changes have come back
 
 ###### Atom - main.css:
 - Let's make one more color change, now that we are on our color-updates branch. `.price` change the color from orange, to whatever color you want
+- `⌘F` will open a find/replace tab at the bottom of Atom and let you look for `.price`
+- `esc` to close the find/replace tab
 - `⌘S` -Don't forget to save your file
 
 ### Starting on a New Feature When We Haven't Finished Our Previous One
