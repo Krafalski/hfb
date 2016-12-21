@@ -335,7 +335,7 @@ Let's make a new branch off of the dev branch to hotfix this major problem! **
 
 ###### Command line:
 - `git add index.html`
-- `git commit -m 'fixed price of Happy Fun Ball oin index.html'`
+- `git commit -m 'fixed price of Happy Fun Ball on index.html'`
 - `git pull origin dev` (this should come back clean, but it is good practice to pull before pushing)
 - `git push origin price-fix` to create a new branch on github
 
@@ -433,7 +433,7 @@ Which is the line:
 -  `git commit -m ''`
 
 ###### Command line:
-- `git pull orgin dev` (yes, we _just_ did this, but it is a good habit to do a pull before doing a push )
+- `git pull origin dev` (yes, we _just_ did this, but it is a good habit to do a pull before doing a push )
 - `git push origin dev` (it is ok if git tells you that your working directory is clean)
 
 ###### Browser - github:
