@@ -368,9 +368,14 @@ Let's make a new branch off of the dev branch to hotfix this major problem! **
 
 ...
 
-ERROR! Merge conflict! ![error message](https://i.imgur.com/KtbGDup.png)
+ERROR! Merge conflict!
 
-- Uh-oh...
+`* branch            dev -> FETCH_HEAD`<br>
+`Auto-merging index.html` <br>
+`CONFLICT (content): Merge conflict in index.html`<br>
+`Automatic merge failed; fix conflicts and then commit the result.`
+
+**Uh-oh...**
 
 ### Merge Conflict (and resolution)!
 
