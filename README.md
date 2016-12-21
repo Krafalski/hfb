@@ -34,16 +34,16 @@ Lastly, flags can be added
 
 Here is a table of our commonly used git commands that we've used in this course so far:
 
-| git | Argument(s) | Flag(s)/Additional arguments | Description |
+| git | Argument | Flag(s)/Additional arguments | Description |
 |:---:|:-----------:|:-------:|:-----------:|
 | git | init |  |  Initializes a new repository|
-| git | add | `.` or filename | takes untracked files and adds them to the staging area so that they can be committed   |
-| git | commit | -m 'some message'  |  takes a snapshot of files in the staging area/ saves this version of them as a commit|
+| git | add | `.` or filename | Takes untracked files and adds them to the staging area so that they can be committed   |
+| git | commit | -m 'some message'  |  Takes a snapshot of files in the staging area/ saves this version of them as a commit|
 | git | remote | -v |  Shows the remote repositories associated with the local repository. Most repositories have an alias for their urls like `origin` or `upstream`|
 | git | pull | upstream master |  Gets files from a url with an alias of `upstream` from its branch `master`|
 | git | push | origin dev |  Sends files to a url with an alias of `origin` to its branch `dev`|
-| git | log| --oneline |  shows a log of commits of a repo (--oneline shows a truncated message)|
-| git | status |  |  shows the state of files in a repo (untracked, modified, staged)|
+| git | log| --oneline |  Shows a log of commits of a repo (--oneline shows a truncated message)|
+| git | status |  |  Shows the state of files in a repo (untracked, modified, staged)|
 
 [Link to our wiki with a more complete list of git commands](https://github.com/ga-students/wdi-remote-matrix/wiki/Git-Cheatsheet)
 
@@ -72,7 +72,7 @@ You may be thinking 'this sounds too good to be true!' It's not! But there is a 
 ### New Git Commands
 To be able to use branches, we will have to learn some new git commands
 
-| git | Argument(s) | Flag(s)/Additional arguments | Description |
+| git | Argument | Flag(s)/Additional arguments | Description |
 |:---:|:-----------:|:-------:|:-----------:|
 | git | branch |  |  Lists branches |
 | git | checkout | branch_name | switches branches |
@@ -80,6 +80,8 @@ To be able to use branches, we will have to learn some new git commands
 | git | diff |  |  Let's you see the changes that you have made (before `git add`)|
 
 Even though these are just four new commands, it is going to take some practice to master them. Let's get started!
+
+Note: You may have noticed that `git merge` is missing - we will be merging our branches via github, so we will not use this command. 
 
 ## Scenario
 You have been hired by Wacky Products Incorporated. They are just weeks away from starting a global marketing campaign for their new hot product Happy Fun Ball and they want a top-notch web page to be launched as soon as possible.
