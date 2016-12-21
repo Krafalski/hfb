@@ -30,7 +30,17 @@ Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean](https://i.imgur.com/SMyXeGV.png)
 - `git remote -v` (should be YOUR github url) => ![this should show you the url where you are fetching and pushing from (with an alias of origin). It should be your github.](https://i.imgur.com/QVG9UPS.png)
 
-#### Part 2 - Make a Dev Branch
+#### Part 2 - Configure Git to Have Autocorrect
+To help with today's lesson we can configure git to have autocorrect. We are going to install it locally (just to this repository). If you end up liking the configuration, you can always install it globally later
+
+Command line:
+- `git config --local help.autocorrect`
+- example output:
+
+   ![an autocorrect message](https://i.imgur.com/Jsi5Jwx.png)
+
+
+#### Part 3 - Make a Dev Branch
 Command line:
 - To make a new branch AND checkout the new branch(we will call our new branch 'dev'): `git checkout -b dev` => ![new branch](https://i.imgur.com/AnAkrWr.png)
 - Do `ls` and `git status` to confirm everything looks like it should
