@@ -47,7 +47,7 @@ Here is a table of our commonly used git commands that we've used in this course
 
 [Link to our wiki with a more complete list of git commands](https://github.com/ga-students/wdi-remote-matrix/wiki/Git-Cheatsheet)
 
-Note: `fork` is not on this list because `fork` is not a git command; it is github specific for copying a repository on github to a new location on github.
+Note: `fork` is not on this list because `fork` is not a git command; it is github-specific for copying a repository on github to a new location on github.
 
 ### Git VCS - Branches and Merging
 Git is a VCS (Version Control System). There are a few popular ones, but git ends up being a top choice because of its branching and merging feature.
@@ -77,11 +77,12 @@ To be able to use branches, we will have to learn some new git commands
 | git | Argument | Flag(s)/Additional arguments | Description |
 |:---:|:-----------:|:-------:|:-----------:|
 | git | branch |  |  Lists branches |
+| git | branch | branch_name |  Creates a new branch |
 | git | checkout | branch_name | switches branches |
 | git | checkout | -b new_branch_name  |  creates a new branch and switches to that branch|
 | git | diff |  |  Let's you see the changes that you have made (before `git add`)|
 
-Even though these are just four new commands, it is going to take some practice to master them. Let's get started!
+Even though these are just five new commands, it is going to take some practice to master them. Let's get started!
 
 Note: You may have noticed that `git merge` is missing - we will be merging our branches via github, so we will not use this command.
 
@@ -117,7 +118,7 @@ This will give you the option to copy the link to your clipboard and make it rea
   - `cd hfb` into the cloned directory and then
   - `ls` and check that
     - `index.html` and
-    - `main.css` are in your folder (`README.md` will also be there)
+    - `main.css` are in your folder (`README.md` & `hfb.png` will also be there)
   - `git status`
 <details><summary>Example output</summary>  
 `On branch master`<br>
@@ -168,7 +169,8 @@ We can configure git to have autocorrect, if it is not already set as a default.
 `Switched to a new branch 'dev'`
  </details>
 
-- `ls` - `index.html` & `main.css` - should still be there
+- `ls`
+  - `index.html` & `main.css`, etc. - should still be there
 - `git status` to confirm everything looks like it should <details><summary>Example output</summary>
 `On branch dev` <br>
 `nothing to commit, working tree clean`
@@ -200,7 +202,8 @@ We are going to be going between the browser, the command line and Atom frequent
 - All other tabs are closed, no other Browser windows are open
 
 **Atom:**
-- directory tree (toggle view: `⌘\`),  See all Atom shortcuts : `⌘⇧P`
+- directory tree (toggle view: `⌘\`).
+  -  See all Atom shortcuts : `⌘⇧P`
 - index.html
 -  main.css
 
@@ -209,7 +212,7 @@ We are going to be going between the browser, the command line and Atom frequent
 Take a couple minutes to get familiar with the code you'll be working on.
 
 ### New Feature - Link the HTML and CSS
-Your first new feature!  Working in `index.html`, you will add a link to `main.css`, then you will merge it into the dev branch, and then into master
+Your first new feature!  Working in `index.html`, you will add a link to `main.css`, then you will merge it into the dev branch, and then into master.
 
 #### Part 1 - Make a New Branch
 ###### Command line:
@@ -261,6 +264,9 @@ Your first new feature!  Working in `index.html`, you will add a link to `main.c
 </details>
 
 - You will either have a yellow bar with your branch name and a green `compare & pull request`or you will have to choose the `Pull requests` tab (the yellow bar does not always appear. It does not automatically mean that something is wrong)
+
+Note: if you do not get the yellow bar, you will have slightly different navigation to complete this step, a detailed outline is down below in the `Part 6: Merge Dev Branch into Master` section.
+- Push the `Compare & pull request button`
 - Select `base:dev` and `compare: link-files`
 <details><summary>Screenshot</summary>
 ![github pull request](https://i.imgur.com/AW5kmXJ.png)
@@ -268,7 +274,7 @@ Your first new feature!  Working in `index.html`, you will add a link to `main.c
 - Wait a moment to let github tell you if there are any merge conflicts <details><summary>Screenshot</summary> ![image of able to merge](https://i.imgur.com/Q3BzVry.png)
 </details>
 
-- All clear! Go ahead and press the `Create pull request` button, wait a moment and you should see a green 'Merge pull request' button about midway down. <details><summary>Screenshot</summary>
+- All clear! Go ahead and press the `Create pull request` button, wait a moment and you should see a green `Merge pull request` button about midway down. <details><summary>Screenshot</summary>
 ![Merge pull request view](https://i.imgur.com/MlXlXg3.png)
 </details>
 - Press the button, then the button will change to say `Confirm merge` press it again to confirm the merge! <details><summary>Screenshot</summary> ![image of a successful merge on github](https://i.imgur.com/QFpGVAQ.png)
@@ -404,7 +410,7 @@ Let's make a new branch off of the dev branch to hotfix this major problem! **
 - `git add .`
 - `git commit -m 'changed .price color'`
 -  `git checkout dev`
-- `git checkout -b 'price-fix` to make a new branch off of dev (and automatically be switched to the new branch) **
+- `git checkout -b price-fix` to make a new branch off of dev (and automatically be switched to the new branch) **
 
 ###### Atom - index.hmtl:
 - Update the price of happy fun ball from `$14.95` to `$24.95` (~ line 19 of `index.html`)
@@ -422,13 +428,16 @@ Let's make a new branch off of the dev branch to hotfix this major problem! **
 ###### Browser - github:
 - See our new branch (either a message will pop up or use the left side pull down to see) <details><summary>Screenshot</summary>![github screenshot](https://i.imgur.com/mgEzi40.png)
 </details>
-- Select the pull request tab
+- Select the `Pull requests` tab
+- On the right side, push the `New pull request` button
 - Select `base: dev` and `compare: price-fix`
 - Wait a moment to let github tell you if there are any merge conflicts
 <details><summary>Screenshot</summary> ![github all clear](https://i.imgur.com/L72S16y.png)
 </details>
 
-- All clear! Go ahead and press the merge button, go ahead and confirm the merge! (Note: when you work on a team, it is unlikely that you would merge your own pull requests)
+- All clear! Go ahead and press the `Create pull request` button
+- A new screen will appear, enter a message if you like, otherwise push the `Create pull request button`
+- `merge pull request` button, wait a moment, then go ahead and confirm the merge! (Note: when you work on a team, it is unlikely that you would merge your own pull requests)
 <details><summary>Screenshot</summary>![Merge Pull Request message and button](https://i.imgur.com/2yUuGmq.png)
 </details>
 
@@ -445,9 +454,10 @@ Let's make a new branch off of the dev branch to hotfix this major problem! **
 
 ...
 
-ERROR! Merge conflict!
+ERROR! Merge conflict! Example output:
 
 `* branch            dev -> FETCH_HEAD`<br>
+`c1df4fd..cc1ba3e  dev        -> origin/dev`<br>
 `Auto-merging index.html` <br>
 `CONFLICT (content): Merge conflict in index.html`<br>
 `Automatic merge failed; fix conflicts and then commit the result.`
@@ -461,31 +471,42 @@ ERROR! Merge conflict!
 - View the conflict in Atom
 ![index.html file](https://i.imgur.com/itPVnM1.png)
 
-- Delete  everything between `<<<<<<< HEAD` and `========`:
+- Delete  everything between (including these lines as well) `<<<<<<< HEAD` and `========`:
 
-Which is the line:
+Which is ALL of this:
 
- `<h3 class="price>Only $14.95</h3>`
-  - This conflict is our doing, let's get rid of our mistake from working in index.html when we were only supposed to be working in main.css and keep the change made from the price-fix branch
+`<<<<<<< HEAD`<br>
+      `<h3 class="price">Only $14.95</h3>`<br>
+`=======` <br>
+
+
+- This conflict is our doing, let's get rid of our mistake from working in index.html when we were only supposed to be working in main.css and keep the change made from the price-fix branch
 
 - Now that we've removed the conflict let's finish cleaning up the conflict and remove the line
 `>>>>>>> 3b73c340f2c158a80ce20828fd94ad83ea60b444`
-- Let's also clean up any extra white space
 
+Note: your numbers/letters after the `>>>>>>>` should be different
+- Let's also clean up any extra white space
+- `⌘S`
+
+###### Command line:
 - `git add index.html`
 - `git commit -m 'fixed merge conflict'`
+- `git push origin color-updates` <details><summary>Example output</summary>
+`Counting objects: 11, done.`<br>
+`Delta compression using up to 4 threads.`<br>
+`Compressing objects: 100% (11/11), done.` <br>
+`Writing objects: 100% (11/11), 1.05 KiB | 0 bytes/s, done.` <br>
+`Total 11 (delta 7), reused 0 (delta 0)`<br>
+`remote: Resolving deltas: 100% (7/7), completed with 3 local objects.`<br>
+`To https://github.com/your-github-handle/hfb`<br>
+` * [new branch]      color-updates -> color-updates`<br>
+</details>
 
-- `git push origin dev`
-
-###### Browser- github:
-- Since we were on the branch `dev` and fixed `dev`, the changes should have automatically been sent to github
-- Check the `index.html` file on github to see that our fix went through
+- We fixed it! Now we can continue working on our project
 
 
 ### Finishing and Merging Your Color Updates
-
-###### Command line:
-- `git checkout color-updates`
 
 ###### Atom main.csss:
 - Make your final updates to `main.css`
@@ -499,6 +520,7 @@ Which is the line:
 - Pull Request
 - Compare `base: dev` to `compare: color-updates`
 - Wait to be sure there are no conflicts
+- Create Pull Request
 - Merge Pull Request
 - Confirm Pull Request
 
@@ -516,13 +538,14 @@ Which is the line:
 -  `git commit -m ''`
 
 ###### Command line:
-- `git pull origin dev` (yes, we _just_ did this, but it is a good habit to do a pull before doing a push )
-- `git push origin dev` (it is ok if git tells you that your working directory is clean)
+- `git pull origin dev` (yes, we _just_ did this, but it is a good habit to do a pull before doing a push. It is ok if git tells you `Already up-to-date` )
+- `git push origin dev` (it is ok if git tells you that `Everything up-to-date`)
 
 ###### Browser - github:
 - Pull request
 - Compare `base: master` to `compare: dev`
 - Wait to be sure there are no conflicts
+- Create Pull Request
 - Merge Pull Request
 - Confirm Pull Request
 - Check to see that your changes have been successfully made to the master branch
