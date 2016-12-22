@@ -42,7 +42,7 @@ Here is a table of our commonly used git commands that we've used in this course
 | git | remote | -v |  Shows the remote repositories associated with the local repository. Most repositories have an alias for their urls like `origin` or `upstream`|
 | git | pull | upstream master |  Gets files from a url with an alias of `upstream` from its branch `master`|
 | git | push | origin dev |  Sends files to a url with an alias of `origin` to its branch `dev`|
-| git | log| --oneline |  Shows a log of commits of a repo (--oneline shows a truncated message)|
+| git | log| --oneline |  Shows a log of commits of a repo (--oneline shows a truncated message)_`q` to exit_|
 | git | status |  |  Shows the state of files in a repo (untracked, modified, staged)|
 
 [Link to our wiki with a more complete list of git commands](https://github.com/ga-students/wdi-remote-matrix/wiki/Git-Cheatsheet)
