@@ -47,6 +47,8 @@ Here is a table of our commonly used git commands that we've used in this course
 
 [Link to our wiki with a more complete list of git commands](https://github.com/ga-students/wdi-remote-matrix/wiki/Git-Cheatsheet)
 
+Note: `fork` is not on this list because `fork` is not a git command; it is github specific for copying a repository on github to a new location on github.
+
 ### Git VCS - Branches and Merging
 Git is a VCS (Version Control System). There are a few popular ones, but git ends up being a top choice because of its branching and merging feature.
 
