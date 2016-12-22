@@ -79,7 +79,7 @@ To be able to use branches, we will have to learn some new git commands
 | git | branch |  |  Lists branches |
 | git | branch | branch_name |  Creates a new branch |
 | git | checkout | branch_name | Switches branches |
-| git | checkout | -b new_branch_name  |  creates a new branch and switches to that branch|
+| git | checkout | -b new_branch_name  |  Creates a new branch and switches to that branch|
 | git | diff |  |  Let's you see the changes that you have made (before `git add`)|
 
 Even though these are just five new commands, it is going to take some practice to master them. Let's get started!
