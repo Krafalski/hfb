@@ -259,14 +259,14 @@ Your first new feature!  Working in `index.html`, you will add a link to `main.c
 </details>
 
 #### Part 4 - Merge New Feature into Dev Branch
-###### Browser - github :
+###### Browser - github:
 - See new branch (either a message will pop up or use the left side pull down to see) <details><summary>Screenshot</summary>![image from below of github](https://i.imgur.com/YtFNJEk.png)
 </details>
 
 - You will either have a yellow bar with your branch name and a green `compare & pull request`or you will have to choose the `Pull requests` tab (the yellow bar does not always appear. It does not automatically mean that something is wrong)
 
 Note: if you do not get the yellow bar, you will have slightly different navigation to complete this step, a detailed outline is down below in the `Part 6: Merge Dev Branch into Master` section.
-- Push the `Compare & pull request button`
+- Push the `Compare & pull request button` that is on the right of the yellow bar
 - Select `base:dev` and `compare: link-files`
 <details><summary>Screenshot</summary>
 ![github pull request](https://i.imgur.com/AW5kmXJ.png)
