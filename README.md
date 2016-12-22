@@ -530,9 +530,9 @@ Note: your numbers/letters after the `>>>>>>>` should be different
 
 ###### Atom index.html/main.css :
 - Take the time to review that the changes to the dev branch that you wanted are there and there are no errors or bugs
-- **Only working code should ever be pushed to master!**
+- **Only working code should ever be merged to master!**
 
-- If everything is ok, go ahead and push the changes to master
+- If everything is ok, go ahead and merge the changes to master
 - If you made changes, don't forget to
 - `git add` and
 -  `git commit -m ''`
