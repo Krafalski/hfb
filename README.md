@@ -13,7 +13,7 @@ _After this lesson, students will be able to:_
 - Resolve a merge conflict
 
 ### Git Refresher
-So far, you have been using git to get code from a remote repository (on github) and writing your own code, tracking it with git and moving (pushing) the code from your computer (local version) to github.
+So far, you have been using git to get code (pulling) from a remote repository (on github) and writing your own code, tracking it with git and moving (pushing) the code from your computer (local version) to github.
 
 When using git locally (on your computer), you have been running the commands in Terminal (Command line).
 
