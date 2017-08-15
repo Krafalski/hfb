@@ -125,7 +125,9 @@ This will give you the option to copy the link to your clipboard and make it rea
     - `index.html` and
     - `main.css` are in your folder (`README.md` & `hfb.png` will also be there)
   - `git status`
+  
 <details><summary>Example output</summary>  
+
 `On branch master`<br>
 `Your branch is up-to-date with 'origin/master'.`<br>
 `nothing to commit, working tree clean`
