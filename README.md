@@ -289,7 +289,10 @@ Note: if you do not get the yellow bar, you will have slightly different navigat
 ![github pull request](https://i.imgur.com/AW5kmXJ.png)
 
 </details>
-- Wait a moment to let github tell you if there are any merge conflicts <details><summary>Screenshot</summary> ![image of able to merge](https://i.imgur.com/Q3BzVry.png)
+- Wait a moment to let github tell you if there are any merge conflicts <details><summary>Screenshot</summary>
+
+![image of able to merge](https://i.imgur.com/Q3BzVry.png)
+
 </details>
 
 - All clear! Go ahead and press the `Create pull request` button, wait a moment and you should see a green `Merge pull request` button about midway down. <details><summary>Screenshot</summary>
@@ -297,7 +300,10 @@ Note: if you do not get the yellow bar, you will have slightly different navigat
 ![Merge pull request view](https://i.imgur.com/MlXlXg3.png)
 
 </details>
-- Press the button, then the button will change to say `Confirm merge` press it again to confirm the merge! <details><summary>Screenshot</summary> ![image of a successful merge on github](https://i.imgur.com/QFpGVAQ.png)
+- Press the button, then the button will change to say `Confirm merge` press it again to confirm the merge! <details><summary>Screenshot</summary>
+
+![image of a successful merge on github](https://i.imgur.com/QFpGVAQ.png)
+
 </details>
 <br>
  Note: When you work on a team it is unlikely that you would merge your own pull requests
