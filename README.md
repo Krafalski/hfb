@@ -99,12 +99,17 @@ As a professional developer, you will do whatever it takes to finish this projec
 ###### Browser - github:
 - Fork Happy-Fun-Ball (make a copy of this remote repository to your github account):
  - [Go here]( https://github.com/Krafalski/hfb) and click fork (upper right) to fork it to your personal repo (Don't worry! You can totally delete it after the lesson!)
-  <details><summary>Show Screenshot</summary> ![Upper right on github](https://i.imgur.com/TjcbBOB.png)
+  <details><summary>Show Screenshot</summary> 
+  
+  ![Upper right on github](https://i.imgur.com/TjcbBOB.png)
+  
   </details>
 - Navigate to YOUR version on YOUR github repo
 - Click the 'clone or download' button (on the right, below fork).
   <details><summary>Show Screenshot</summary>
+  
   ![Copy or Clone button](https://i.imgur.com/6uAnb0R.png)
+  
 </details>
 This will give you the option to copy the link to your clipboard and make it ready to paste in the command line.
 - REMEMBER: This should be from YOUR repo (the link to be copied should be `git@github.com:your-github-handle/hfb.git`)
@@ -120,7 +125,9 @@ This will give you the option to copy the link to your clipboard and make it rea
     - `index.html` and
     - `main.css` are in your folder (`README.md` & `hfb.png` will also be there)
   - `git status`
+  
 <details><summary>Example output</summary>  
+
 `On branch master`<br>
 `Your branch is up-to-date with 'origin/master'.`<br>
 `nothing to commit, working tree clean`
@@ -183,7 +190,10 @@ We can configure git to have autocorrect, if it is not already set as a default.
 
 ###### Browser - github:
 - See your new branch on github (it should be there, refresh if you don't see it. If you still don't see it, let me know and we'll trouble shoot)
-It will be a new message along the top of github OR from clicking the `Branch: master` button <details><summary> Screeshot </summary> ![pull-down menu](https://i.imgur.com/oIptMUM.png)
+It will be a new message along the top of github OR from clicking the `Branch: master` button <details><summary> Screeshot </summary> 
+
+![pull-down menu](https://i.imgur.com/oIptMUM.png)
+
 </details>
 
 ###### Command line:
@@ -192,6 +202,7 @@ It will be a new message along the top of github OR from clicking the `Branch: m
 
 #### Part 3 - Organize yourself
 We are going to be going between the browser, the command line and Atom frequently. Be sure you can work efficiently and effectively by setting up a good workflow! Start by organizing your browser, command line and Atom so that you can easily switch between them (don't forget to use Spectacle). Close extra tabs and browser windows.  <details><summary> Here is how I worked on this project(You will have to also account for Zoom and Slack): </summary>
+
 ![window organization](https://i.imgur.com/WAUMTBR.png)
 
 **Browser:**
@@ -218,7 +229,9 @@ Your first new feature!  Working in `index.html`, you will add a link to `main.c
 ###### Command line:
 - Let's make a new branch specifically for our new feature
 - `git branch` - to check that you are on the `dev` branch. This command will show all the branches and highlight the one you are on. <details><summary>Example output:</summary>
+
  ![example output of `git branch`](https://i.imgur.com/2bKy3zL.png)
+ 
 </details>
 
 
@@ -255,7 +268,10 @@ Your first new feature!  Working in `index.html`, you will add a link to `main.c
 ` * [new branch]      link-files -> link-files`
 
 </details>
-- Check github to see that the new branch is there <details><summary> Screenshot</summary> ![github new branch screenshot](https://i.imgur.com/YtFNJEk.png)
+- Check github to see that the new branch is there <details><summary> Screenshot</summary>
+
+![github new branch screenshot](https://i.imgur.com/YtFNJEk.png)
+
 </details>
 
 #### Part 4 - Merge New Feature into Dev Branch
@@ -269,15 +285,25 @@ Note: if you do not get the yellow bar, you will have slightly different navigat
 - Push the `Compare & pull request button` that is on the right of the yellow bar
 - Select `base:dev` and `compare: link-files`
 <details><summary>Screenshot</summary>
+
 ![github pull request](https://i.imgur.com/AW5kmXJ.png)
+
 </details>
-- Wait a moment to let github tell you if there are any merge conflicts <details><summary>Screenshot</summary> ![image of able to merge](https://i.imgur.com/Q3BzVry.png)
+- Wait a moment to let github tell you if there are any merge conflicts <details><summary>Screenshot</summary>
+
+![image of able to merge](https://i.imgur.com/Q3BzVry.png)
+
 </details>
 
 - All clear! Go ahead and press the `Create pull request` button, wait a moment and you should see a green `Merge pull request` button about midway down. <details><summary>Screenshot</summary>
+
 ![Merge pull request view](https://i.imgur.com/MlXlXg3.png)
+
 </details>
-- Press the button, then the button will change to say `Confirm merge` press it again to confirm the merge! <details><summary>Screenshot</summary> ![image of a successful merge on github](https://i.imgur.com/QFpGVAQ.png)
+- Press the button, then the button will change to say `Confirm merge` press it again to confirm the merge! <details><summary>Screenshot</summary>
+
+![image of a successful merge on github](https://i.imgur.com/QFpGVAQ.png)
+
 </details>
 <br>
  Note: When you work on a team it is unlikely that you would merge your own pull requests
@@ -336,7 +362,7 @@ Note: if you do not get the yellow bar, you will have slightly different navigat
   - Check that you are on the dev branch **
   - `git branch` will list all your branches and have a `*` next to the branch you are on. Then:
   - `git checkout dev`
-  -  `git checkout -b color-updates`
+  - `git checkout -b color-updates`
 
 
   ** GOTCHA: Branches can be created off any other branch. Be sure you are on the branch that you want to branch off of before creating a new branch!
@@ -469,6 +495,7 @@ ERROR! Merge conflict! Example output:
 ###### Atom - index.html :
 
 - View the conflict in Atom
+
 ![index.html file](https://i.imgur.com/itPVnM1.png)
 
 - Delete  everything between (including these lines as well) `<<<<<<< HEAD` and `========`:
