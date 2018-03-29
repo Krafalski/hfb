@@ -351,10 +351,7 @@ Note: if you do not get the yellow bar, you will have slightly different navigat
 
 ![choose your fork](https://i.imgur.com/TIoeuRd.png)
 
-- Select `base:dev` and `compare: link-files`
-
-![selecting your base and compare](https://i.imgur.com/KPNeb9p.png)
-
+- Wait for the page to update so you can
 - Compare `base: master` to `compare: dev`
 - Wait to be sure there are no conflicts
 - Green `Ceate pull request` button
