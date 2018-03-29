@@ -347,6 +347,14 @@ Note: if you do not get the yellow bar, you will have slightly different navigat
 - If you are still on the merge page, navigate back to the main view
 - Open the `Pull Requests` tab
 - On the right select the green `New pull request` button
+- Select **YOUR** fork (click on `base fork: Krafalski/hfb` and then scroll to your username/fork), wait for the page to update to the next screenshot image:
+
+![choose your fork](https://i.imgur.com/TIoeuRd.png)
+
+- Select `base:dev` and `compare: link-files`
+
+![selecting your base and compare](https://i.imgur.com/KPNeb9p.png)
+
 - Compare `base: master` to `compare: dev`
 - Wait to be sure there are no conflicts
 - Green `Ceate pull request` button
