@@ -283,7 +283,14 @@ Your first new feature!  Working in `index.html`, you will add a link to `main.c
 
 Note: if you do not get the yellow bar, you will have slightly different navigation to complete this step, a detailed outline is down below in the `Part 6: Merge Dev Branch into Master` section.
 - Push the `Compare & pull request button` that is on the right of the yellow bar
+- Select **YOUR** fork, wait for the page to update then:
+
+![choose your fork](https://i.imgur.com/TIoeuRd.png)
+
 - Select `base:dev` and `compare: link-files`
+
+![selecting your base and compare](https://i.imgur.com/KPNeb9p.png)
+
 <details><summary>Screenshot</summary>
 
 ![github pull request](https://i.imgur.com/AW5kmXJ.png)
