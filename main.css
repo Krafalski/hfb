@@ -5,7 +5,7 @@ body {
   margin-top:20px;
   font-family: Osaka;
   background-color: ghostwhite;
-  color: inherit;
+  color: rgb(0, 128, 204);
 }
 
 h2, h3, h5 {
