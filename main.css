@@ -5,7 +5,7 @@ body {
   margin-top:20px;
   font-family: Osaka;
   background-color: ghostwhite;
-  color: inherit;
+  color: rgb(0, 128, 204);
 }
 
 h2, h3, h5 {
@@ -26,7 +26,7 @@ li {
 
 a {
   text-align: center;
-  color: whitesmoke;
+  color: rgb(0, 205, 199);
   text-decoration: none;
 }
 
@@ -77,5 +77,5 @@ h1 {
 }
 
 .price {
-  color: orange;
+  color: rgb(235, 35, 0);
 }
