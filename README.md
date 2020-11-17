@@ -99,17 +99,17 @@ As a professional developer, you will do whatever it takes to finish this projec
 ###### Browser - github:
 - Fork Happy-Fun-Ball (make a copy of this remote repository to your github account):
  - [Go here]( https://github.com/Krafalski/hfb) and click fork (upper right) to fork it to your personal repo (Don't worry! You can totally delete it after the lesson!)
-  <details><summary>Show Screenshot</summary> 
-  
+  <details><summary>Show Screenshot</summary>
+
   ![Upper right on github](https://i.imgur.com/TjcbBOB.png)
-  
+
   </details>
 - Navigate to YOUR version on YOUR github repo
 - Click the 'clone or download' button (on the right, below fork).
   <details><summary>Show Screenshot</summary>
-  
+
   ![Copy or Clone button](https://i.imgur.com/6uAnb0R.png)
-  
+
 </details>
 This will give you the option to copy the link to your clipboard and make it ready to paste in the command line.
 - REMEMBER: This should be from YOUR repo (the link to be copied should be `git@github.com:your-github-handle/hfb.git`)
@@ -125,7 +125,7 @@ This will give you the option to copy the link to your clipboard and make it rea
     - `index.html` and
     - `main.css` are in your folder (`README.md` & `hfb.png` will also be there)
   - `git status`
-  
+
 <details><summary>Example output</summary>  
 
 `On branch master`<br>
@@ -190,7 +190,7 @@ We can configure git to have autocorrect, if it is not already set as a default.
 
 ###### Browser - github:
 - See your new branch on github (it should be there, refresh if you don't see it. If you still don't see it, let me know and we'll trouble shoot)
-It will be a new message along the top of github OR from clicking the `Branch: master` button <details><summary> Screeshot </summary> 
+It will be a new message along the top of github OR from clicking the `Branch: master` button <details><summary> Screeshot </summary>
 
 ![pull-down menu](https://i.imgur.com/oIptMUM.png)
 
@@ -231,7 +231,7 @@ Your first new feature!  Working in `index.html`, you will add a link to `main.c
 - `git branch` - to check that you are on the `dev` branch. This command will show all the branches and highlight the one you are on. <details><summary>Example output:</summary>
 
  ![example output of `git branch`](https://i.imgur.com/2bKy3zL.png)
- 
+
 </details>
 
 
@@ -599,3 +599,7 @@ Note: your numbers/letters after the `>>>>>>>` should be different
 
 ### Sudden and Permanent Shut Down of Wacky Products Incorporated
 - Well, it was fun while it lasted?
+
+
+### Bonus Bonus
+- use comments in a pull request to provide reviews
